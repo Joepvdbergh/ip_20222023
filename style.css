@@ -1,0 +1,192 @@
+body {
+  background-image: url(images/grass-background.webp);
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+
+img {
+  height: 200px;
+  width: 200px;
+}
+
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #434343;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0.875em 1em;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #333;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2em;
+}
+
+img#homer1 {
+  height: 30em;
+  width: 40em;
+  margin-top: 5em;
+}
+
+button#startHome {
+  background-color: aqua;
+  border-radius: 1.5em;
+  height: 5em;
+  width: 14em;
+  margin: 2em;
+
+}
+
+
+img.homer-outfit {
+  height: 30em;
+  width: 40em;
+}
+
+
+
+
+/* voor de game */
+
+div.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2em;
+  padding: 0em 5em;
+}
+
+main.game {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 2em;
+
+
+}
+
+img.proccesbar {
+  height: 7em;
+  width: 30em;
+}
+
+img.homer-image {
+  height: 15em;
+  width: 15em;
+}
+
+img.tree-image {
+  height: 27em;
+  width: 20em;
+}
+
+img.house-image {
+  height: 27em;
+  width: 40em;
+}
+
+img.struik-image {
+  height: 7em;
+  width: 7em;
+}
+
+button.tree-button {
+  background-color: yellow;
+  height: 2em;
+  width: 15em;
+  border-radius: 2em;
+  box-shadow: 0.3em 0.3em 0.6em 0.2em rgba(59, 59, 59, 0.8);
+}
+
+button.house-button {
+  background-color: yellow;
+  height: 2em;
+  width: 15em;
+  border-radius: 2em;
+  box-shadow: 0.3em 0.3em 0.6em 0.2em rgba(59, 59, 59, 0.8);
+}
+
+button.berry-button {
+  background-color: yellow;
+  height: 2em;
+  width: 15em;
+  border-radius: 2em;
+  box-shadow: 0.3em 0.3em 0.6em 0.2em rgba(59, 59, 59, 0.8);
+}
+
+button.nuke-button {
+  background-color: yellow;
+  height: 2em;
+  width: 15em;
+  border-radius: 2em;
+  box-shadow: 0.3em 0.3em 0.6em 0.2em rgba(59, 59, 59, 0.8);
+}
+
+
+/* voor de outfits */
+
+button.normal-button {
+  background-color: wheat;
+  height: 2em;
+  width: 15em;
+  border-radius: 2em;
+  box-shadow: 0.3em 0.3em 0.6em 0.2em rgba(59, 59, 59, 0.8);
+}
+
+button.red-button {
+  background-color: red;
+  height: 2em;
+  width: 15em;
+  border-radius: 2em;
+  box-shadow: 0.3em 0.3em 0.6em 0.2em rgba(59, 59, 59, 0.8);
+}
+
+button.orange-button {
+  background-color: orange;
+  height: 2em;
+  width: 15em;
+  border-radius: 2em;
+  box-shadow: 0.3em 0.3em 0.6em 0.2em rgba(59, 59, 59, 0.8);
+}
+
+button.black-button {
+  background-color: black;
+  color: aliceblue;
+  height: 2em;
+  width: 15em;
+  border-radius: 2em;
+  box-shadow: 0.3em 0.3em 0.6em 0.2em rgba(59, 59, 59, 0.8);
+}
+
+div.outfit-start {
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+
+}
