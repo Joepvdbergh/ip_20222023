@@ -1,9 +1,10 @@
 body {
-  background-image: url(images/grass-background.webp);
+  background-image: url(images/grass_background.png);
   background-repeat: no-repeat;
-  margin: 0;
-}
 
+  margin: 0;
+  font-family: 'simpsonfont';
+}
 
 img {
   height: 200px;
@@ -43,23 +44,31 @@ main {
 
 h1 {
   text-align: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 2em;
+  color: rgb(54, 54, 54);
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1em;
+
 }
 
 img#homer1 {
   height: 30em;
   width: 40em;
-  margin-top: 5em;
+  margin-top: 2em;
 }
 
 button#startHome {
-  background-color: aqua;
+  background-color: yellow;
+  font-family: 'simpsonfont';
   border-radius: 1.5em;
-  height: 5em;
-  width: 14em;
+  height: 3em;
+  width: 10em;
   margin: 2em;
-
+  box-shadow: 0.3em 0.3em 0.6em 0.2em rgba(59, 59, 59, 0.8);
 }
 
 
@@ -122,6 +131,7 @@ button.tree-button {
   width: 15em;
   border-radius: 2em;
   box-shadow: 0.3em 0.3em 0.6em 0.2em rgba(59, 59, 59, 0.8);
+  font-family: 'simpsonfont';
 }
 
 button.house-button {
@@ -130,6 +140,7 @@ button.house-button {
   width: 15em;
   border-radius: 2em;
   box-shadow: 0.3em 0.3em 0.6em 0.2em rgba(59, 59, 59, 0.8);
+  font-family: 'simpsonfont';
 }
 
 button.berry-button {
@@ -138,6 +149,7 @@ button.berry-button {
   width: 15em;
   border-radius: 2em;
   box-shadow: 0.3em 0.3em 0.6em 0.2em rgba(59, 59, 59, 0.8);
+  font-family: 'simpsonfont';
 }
 
 button.nuke-button {
@@ -146,6 +158,7 @@ button.nuke-button {
   width: 15em;
   border-radius: 2em;
   box-shadow: 0.3em 0.3em 0.6em 0.2em rgba(59, 59, 59, 0.8);
+  font-family: 'simpsonfont';
 }
 
 
@@ -157,6 +170,7 @@ button.normal-button {
   width: 15em;
   border-radius: 2em;
   box-shadow: 0.3em 0.3em 0.6em 0.2em rgba(59, 59, 59, 0.8);
+  font-family: 'simpsonfont';
 }
 
 button.red-button {
@@ -165,6 +179,7 @@ button.red-button {
   width: 15em;
   border-radius: 2em;
   box-shadow: 0.3em 0.3em 0.6em 0.2em rgba(59, 59, 59, 0.8);
+  font-family: 'simpsonfont';
 }
 
 button.orange-button {
@@ -173,6 +188,7 @@ button.orange-button {
   width: 15em;
   border-radius: 2em;
   box-shadow: 0.3em 0.3em 0.6em 0.2em rgba(59, 59, 59, 0.8);
+  font-family: 'simpsonfont';
 }
 
 button.black-button {
@@ -182,6 +198,7 @@ button.black-button {
   width: 15em;
   border-radius: 2em;
   box-shadow: 0.3em 0.3em 0.6em 0.2em rgba(59, 59, 59, 0.8);
+  font-family: 'simpsonfont';
 }
 
 div.outfit-start {
@@ -189,4 +206,15 @@ div.outfit-start {
   justify-content: center;
   margin-top: 5em;
 
+
+}
+
+button.outfit-button {
+  background-color: yellow;
+  font-family: 'simpsonfont';
+  border-radius: 1.5em;
+  height: 3em;
+  width: 10em;
+  margin: 0;
+  box-shadow: 0.3em 0.3em 0.6em 0.2em rgba(59, 59, 59, 0.8);
 }
