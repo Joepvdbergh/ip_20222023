@@ -63,6 +63,7 @@ if (bodyTag.classList.contains('pre')) {
 
     var treeImage = document.querySelector('.tree-image');
     var treeButton = document.querySelector('.tree-button');
+    var rockAudio = new Audio("punch-2-123106.mp3")
 
 
     var berryImage = document.querySelector('.struik-image');
@@ -114,9 +115,10 @@ if (bodyTag.classList.contains('pre')) {
             eindTekst.replaceWith("geweldig je bent een ware idioot");
 
 
-            var idootDiv = document.createElement("div");
-            var idootContent = document.createTextNode("Hi there and greetings!");
-            idootDiv.appendChild(idootContent);
+            var idiotDiv = document.createElement("div");
+            var idotContent = document.createTextNode("geweldig je bent een ware idioot");
+
+            document.body.appendChild(idiotDiv);
 
 
 
@@ -173,6 +175,8 @@ if (bodyTag.classList.contains('pre')) {
 
     treeButton.addEventListener('click', function onclick() {
         treeImage.src = './images/' + 'Boom_dood.png';
+        rockAudio.play();
+
         idioot();
         nuke();
     })
