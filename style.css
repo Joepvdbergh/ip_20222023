@@ -6,12 +6,6 @@ body {
   font-family: 'simpsonfont';
 }
 
-img {
-  height: 200px;
-  width: 200px;
-}
-
-
 ul {
   list-style-type: none;
   overflow: hidden;
@@ -52,7 +46,6 @@ h1 {
 h2 {
   text-align: center;
   font-size: 1em;
-
 }
 
 img#homer1 {
@@ -71,14 +64,10 @@ button#startHome {
   box-shadow: 0.3em 0.3em 0.6em 0.2em rgba(59, 59, 59, 0.8);
 }
 
-
 img.homer-outfit {
   height: 30em;
   width: 40em;
 }
-
-
-
 
 /* voor de game */
 

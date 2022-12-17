@@ -1,80 +1,85 @@
-// ****variabele****
+// De body  aanroepen en een array voor de outfits //
 
 var bodyTag = document.querySelector('body');
 var outfits = ['homer-normaal.png', 'Homer_rood.png', 'Homer_jail.png', 'Homer-magic.png'];
 
+// if else loop om 2 pagina's van elkaar te onderscheiden in javascript door een claasnaam te geven aan de body's //
 
 if (bodyTag.classList.contains('pre')) {
+
+    //variabele voor de outfit pagina //
+
     var normalButton = document.querySelector('.normal-button');
     var homerImage = document.querySelector('.homer-outfit');
     var redButton = document.querySelector('.red-button');
     var orangeButton = document.querySelector('.orange-button');
     var blackButton = document.querySelector('.black-button');
-    var dohAudio = new Audio('doh.mp3');
+    var dohAudio = new Audio('sounds/doh.mp3');
+    var yeloAudio = new Audio('sounds/yelo.mp3');
+    var drugsAudio = new Audio('sounds/drugs.mp3');
+    var crimeAudio = new Audio('sounds/crime.mp3');
 
     var startButton = document.querySelector('.outfit-button')
-    var beginAudio = new Audio('blockbuster-logo-13085.mp3')
+    var beginAudio = new Audio('sounds/blockbuster-logo-13085.mp3')
 
+    // click functies voor de outfit buttons + opgeslagen in local storage //
 
     normalButton.addEventListener('click', function () {
         console.log("normal");
         homerImage.src = './images/' + 'homer-normaal.png';
         dohAudio.play();
         localStorage.setItem('activeNumber', 0);
-
     })
-
-
 
     redButton.addEventListener('click', function () {
         console.log("rood");
         homerImage.src = './images/' + 'Homer_rood.png';
-        dohAudio.play();
+        yeloAudio.play();
         localStorage.setItem('activeNumber', 1);
     })
-
 
     orangeButton.addEventListener('click', function () {
         console.log("orange");
         homerImage.src = './images/' + 'Homer_jail.png';
-        dohAudio.play();
+        crimeAudio.play();
         localStorage.setItem('activeNumber', 2);
-
     })
 
     blackButton.addEventListener('click', function () {
         console.log("black");
         homerImage.src = './images/' + 'Homer-magic.png';
-        dohAudio.play();
+        drugsAudio.play();
         localStorage.setItem('activeNumber', 3);
-
     })
 
     beginAudio.play();
 
-
+    // De else geeft hier alles wat de game pagina betreft aan. //
 
 } else {
+
+    // variable voor de game pagina //
+
     var houseImage = document.querySelector('.house-image');
     var houseButton = document.querySelector('.house-button');
-    var flameAudio = new Audio("fire-sound-efftect-21991.mp3");
+    var flameAudio = new Audio("sounds/fire-sound-efftect-21991.mp3");
     flameAudio.volume = (.3);
     flameAudio.duration = (.0001);
 
     var treeImage = document.querySelector('.tree-image');
     var treeButton = document.querySelector('.tree-button');
-    var rockAudio = new Audio("punch-2-123106.mp3")
+    var rockAudio = new Audio("sounds/punch-2-123106.mp3")
 
 
     var berryImage = document.querySelector('.struik-image');
     var berryButton = document.querySelector('.berry-button');
     var homerImage = document.querySelector('.homer-image');
-    var eatingAudio = new Audio("eatingsfxwav-14588.mp3");
-    var screamAudio = new Audio("male-scream-123080.mp3");
+    var eatingAudio = new Audio("sounds/eatingsfxwav-14588.mp3");
+    var screamAudio = new Audio("sounds/male-scream-123080.mp3");
 
 
     var nukeButton = document.querySelector('.nuke-button');
-    var nukeAudio = new Audio('hq-explosion-6288.mp3')
+    var nukeAudio = new Audio('sounds/hq-explosion-6288.mp3')
 
 
     var index = 0;
@@ -84,27 +89,16 @@ if (bodyTag.classList.contains('pre')) {
     var proccesIndex = 0;
     var nukeProcces = document.querySelector('.proccesbar')
 
-    var birdAudio = new Audio("birds.mp3");
-    var simpsonsAudio = new Audio('simpsons-sax-11798.mp3')
+    var birdAudio = new Audio("sounds/birds.mp3");
+    var simpsonsAudio = new Audio('sounds/simpsons-sax-11798.mp3')
     simpsonsAudio.volume = ('.2')
 
-
     var activeNumber = localStorage.getItem('activeNumber');
-    console.log("hallo", activeNumber);
-
     homerImage.src = './images/' + outfits[activeNumber];
-    console.log('./images/' + outfits[activeNumber])
-    console.log(homerImage);
-
     var bodyImage = document.querySelector('.game-body');
 
 
-
-
-
-
-
-    // ****functies voor de proccesbar****
+    // functies voor de proccesbar//
 
     function idioot() {
 
@@ -115,20 +109,8 @@ if (bodyTag.classList.contains('pre')) {
             eindTekst.replaceWith("geweldig je bent een ware idioot");
 
 
-            var idiotDiv = document.createElement("div");
-            var idotContent = document.createTextNode("geweldig je bent een ware idioot");
-
-            document.body.appendChild(idiotDiv);
-
-
-
-
-
-
-
-
         } else {
-            console.log("werkt niet");
+            console.log("nog niet");
         }
     }
 
@@ -159,10 +141,9 @@ if (bodyTag.classList.contains('pre')) {
             bodyImage.style.backgroundImage = "url('./images/volcano_background.png')";
         }
 
-
     }
 
-    // ****voor de buttons****
+    // voor de buttons//
 
     houseButton.addEventListener('click', function onclick() {
         houseImage.src = './images/' + 'Huis_vlammen.png';
@@ -190,7 +171,6 @@ if (bodyTag.classList.contains('pre')) {
 
         idioot();
         nuke();
-
     })
 
 
@@ -207,15 +187,9 @@ if (bodyTag.classList.contains('pre')) {
         nukeAudio.play();
 
         bodyImage.style.backgroundImage = "url('./images/volcano_background.png')";
-
-
     })
 
     simpsonsAudio.play();
     birdAudio.play();
-
-
-
-
 
 }
